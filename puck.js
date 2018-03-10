@@ -22,6 +22,7 @@ class Puck {
                 this.xspeed = 5 * cos(angle);
                 this.yspeed = 5 * sin(angle);
                 this.x = p.x + p.w/2 + this.r;
+                hit.play();
             }
             
         }
@@ -37,6 +38,7 @@ class Puck {
                 this.xspeed = 5 * cos(angle);
                 this.yspeed = 5 * sin(angle);
                 this.x = p.x - p.w/2 - this.r;
+                hit.play();
             }
         }
     }
@@ -66,7 +68,8 @@ class Puck {
         }
         
         if (this.x - this.r > width) {
-            ding.play();
+            
+            .play();
             leftscore++;
             this.reset();
         }
@@ -79,7 +82,6 @@ class Puck {
     }
     
     show() {
-        // fill(200);
         ellipse(this.x, this.y, this.r*2);
         (image(puck_face ,this.x-11, this.y-11, 22,22));;
 

@@ -5,6 +5,7 @@ var img;
 function preload() {
     img  = loadImage("data/bg.jpg");  
     ding = loadSound("data/roasty.mp3");
+    hit = loadSound("data/hit.mp3");
     puck_face = loadImage("data/awe_face.png");
     imageMode(CENTER);
 
@@ -34,12 +35,8 @@ function draw() {
     fill(255);
     textSize(20);
     fill(255, 255, 0);
-
     text(leftscore, 32, 40);
-    
-
-    text(rightscore, width-64, 40);
-    
+    text(rightscore, width-64, 40);    
 }
 
 
