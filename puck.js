@@ -44,6 +44,8 @@ class Puck {
     update() {
         this.x += this.xspeed;
         this.y += this.yspeed;
+        (image(puck_face ,this.x-12, this.y-12, 22,22));;
+
     }
     
     reset() {
@@ -77,7 +79,9 @@ class Puck {
     }
     
     show() {
-        fill(255);
+        // fill(200);
         ellipse(this.x, this.y, this.r*2);
+        (image(puck_face ,this.x-11, this.y-11, 22,22));;
+
     }
 }
