@@ -5,7 +5,8 @@ var img;
 function preload() {
     img  = loadImage("data/bg.jpg");  
     ding = loadSound("data/roasty.mp3");
-    hit = loadSound("data/hit.mp3");
+    hit_right  = loadSound("data/hit_01.mp3")    
+    hit_left  = loadSound("data/hit_02.mp3");
     puck_face = loadImage("data/awe_face.png");
     imageMode(CENTER);
 

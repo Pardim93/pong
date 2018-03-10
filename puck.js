@@ -22,7 +22,8 @@ class Puck {
                 this.xspeed = 5 * cos(angle);
                 this.yspeed = 5 * sin(angle);
                 this.x = p.x + p.w/2 + this.r;
-                hit.play();
+                hit_left.play();
+
             }
             
         }
@@ -38,7 +39,7 @@ class Puck {
                 this.xspeed = 5 * cos(angle);
                 this.yspeed = 5 * sin(angle);
                 this.x = p.x - p.w/2 - this.r;
-                hit.play();
+                hit_right.play();
             }
         }
     }
@@ -68,8 +69,7 @@ class Puck {
         }
         
         if (this.x - this.r > width) {
-            
-            .play();
+            ding.play();
             leftscore++;
             this.reset();
         }
