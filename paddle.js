@@ -10,8 +10,6 @@ class Paddle {
         } else {
             this.x = width - this.w;
         }
-        
-        
     }
     
     update() {
@@ -29,3 +27,7 @@ class Paddle {
         rect(this.x, this.y, this.w, this.h);
     }
 }
+
+
+
+

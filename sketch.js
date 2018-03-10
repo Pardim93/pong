@@ -3,7 +3,7 @@ let rightscore = 0;
 
 function setup() {
     createCanvas(600, 400);
-    // ding = loadSound("data/roasty.mp3");
+    ding = loadSound("data/roasty.mp3");
     puck = new Puck();
     left = new Paddle(true);
     right = new Paddle(false);

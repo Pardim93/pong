@@ -1,5 +1,6 @@
 class Puck {
     constructor() {
+
         this.x = width/2;
         this.y = height/2;
         this.xspeed = 0;
@@ -63,13 +64,13 @@ class Puck {
         }
         
         if (this.x - this.r > width) {
-            // ding.play();
+            ding.play();
             leftscore++;
             this.reset();
         }
         
         if (this.x + this.r < 0) {
-            // ding.play();
+            ding.play();
             rightscore++;
             this.reset();
         }
