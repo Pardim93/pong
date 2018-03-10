@@ -1,17 +1,22 @@
 let leftscore = 0;
 let rightscore = 0;
 
+var img;
+function preload() {
+    img  = loadImage("data/bg.jpg");  
+    ding = loadSound("data/roasty.mp3");
+
+}
 function setup() {
     createCanvas(600, 400);
-    ding = loadSound("data/roasty.mp3");
-    puck = new Puck();
-    left = new Paddle(true);
+    puck  = new Puck();
+    left  = new Paddle(true);
     right = new Paddle(false);
 }
 
 function draw() {
     background(0);
-    
+    image(img, 0, 0);
     puck.checkPaddleRight(right);
     puck.checkPaddleLeft(left);
 
@@ -37,6 +42,7 @@ function keyReleased() {
 }
 
 function keyPressed() {
+
     console.log(key);
     if (key == 'A') {
         left.move(-10);
