@@ -4,7 +4,7 @@ class Paddle {
         this.w = 20;
         this.h = 100;
         this.ychange = 0;
-
+        this.isLeft = isLeft;
         
         if (isLeft) {
             this.x = this.w;
@@ -23,9 +23,13 @@ class Paddle {
     }
     
     show() {
-        fill(255);
+        
         rectMode(CENTER);
-
+        if(this.isLeft)
+            fill(255, 0, 0);
+        else
+            fill(0,255,0);
+             
         rect(this.x, this.y, this.w, this.h,20);
 
 
