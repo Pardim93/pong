@@ -24,10 +24,10 @@ class Paddle {
     
     show() {
         fill(255);
-        // rectMode(CENTER);
-        // rect(3, 2, 55, 55);
-        rect(this.x, this.y, this.w, this.h,80, 80);
-        ellipse(this.x, this.y, this.r*2);
+        rectMode(CENTER);
+
+        rect(this.x, this.y, this.w, this.h,20);
+
 
     }
 }
