@@ -32,7 +32,7 @@ function draw() {
     puck.show();
     
     fill(255);
-    textSize(32);
+    textSize(20);
     fill(255, 255, 0);
 
     text(leftscore, 32, 40);
